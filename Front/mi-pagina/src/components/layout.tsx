@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import '@/styles/globals.css'
 import Navbar from '@/components/navbar'
+import Footer from '@/components/footer'
 
 export default function Layout({children}: any) {
     return(
@@ -11,9 +12,8 @@ export default function Layout({children}: any) {
                 <link rel='icon' href='/static/logo.png'/>
             </Head>
             <Navbar/>
-            <main className='font-bold'> 
-                {children}
-            </main>
+            {children}
+            <Footer/>
         </>
     )
 }
