@@ -1,0 +1,7 @@
+.logo {
+    transform: translate(73%, -115%);
+}
+
+.navButton:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+}

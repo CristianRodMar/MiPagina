@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import '@/styles/globals.css'
+import Navbar from '@/components/navbar'
 
 export default function Layout({children}: any) {
     return(
@@ -7,8 +8,9 @@ export default function Layout({children}: any) {
             <Head>
                 <title>CristianRM</title>
                 <meta name='description' content='Portafolio personal de desarrollo web de CristianRM'/>
-                <link rel='icon' href='/static/favicon.ico'/>
+                <link rel='icon' href='/static/logo.png'/>
             </Head>
+            <Navbar/>
             <main className='font-bold'> 
                 {children}
             </main>
