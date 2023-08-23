@@ -43,6 +43,28 @@ main {
     object-fit: cover;
 }
 
-.content {
+#__next {
     background-color: rgba(0,0,0,0.3);
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    animation-duration: 0.5s;
+    animation-name: reveal-name;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes reveal-name {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

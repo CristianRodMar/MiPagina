@@ -1,0 +1,16 @@
+.container {
+    max-width: 1200px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(5rem);
+    transition-property: opacity, transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,10 +1,11 @@
-import '@/styles/container.css'
+import '@/styles/revealContainer.css'
 
 export default function RevealContainer({children}: any) {
         var revealLimit:number = 175
 
-        window.addEventListener('load', visibleOrNot)
-        window.addEventListener('scroll', visibleOrNot)
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', visibleOrNot)
+        }
         
         function visibleOrNot() {
             var toRevealContent = document.querySelectorAll('.reveal')

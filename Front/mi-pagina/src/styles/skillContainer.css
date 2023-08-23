@@ -1,0 +1,13 @@
+.skill-container {
+    /* max-width: 10rem; */
+    opacity: 0;
+    transform: translateY(5rem);
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.visible-skill {
+    opacity: 1;
+    transform: translateY(0);
+}
+

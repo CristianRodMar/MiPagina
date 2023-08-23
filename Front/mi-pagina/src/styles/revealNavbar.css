@@ -1,0 +1,18 @@
+#second-nav {
+    transform: translateY(-250px);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.visible-nav {
+    transform: translateY(0) !important;
+}
+
+.logo {
+    transform: translate(73%, -115%);
+}
+
+.navButton:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+}
