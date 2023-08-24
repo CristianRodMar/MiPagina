@@ -133,7 +133,7 @@ export default function Home() {
           <h2>Ingles: Alto</h2>
           <h2>Castellano: Nativo</h2>
         </div>
-        <hr/>
+        <hr className="mb-10"/>
       </BioContainer>
     </main>
   );

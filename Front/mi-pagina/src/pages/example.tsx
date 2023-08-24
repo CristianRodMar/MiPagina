@@ -3,8 +3,10 @@ import RevealContainer from "@/components/revealContainer";
 export default function Example() {
   return (
     <main className="flex flex-col gap-6">
-      <div className="select-none sm:text-9xl text-6xl text-center text-white sm:py-52 py-10 title-container">
-        <h1 className="title">Página de ejemplo</h1>
+      <div className="title-container py-32">
+        <h1 className="select-none lg:text-9xl md:text-6xl text-4xl text-center text-white title">
+          Página de ejemplo
+        </h1>
       </div>
       
       <RevealContainer>
