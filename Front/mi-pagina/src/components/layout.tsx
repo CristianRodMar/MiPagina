@@ -13,11 +13,6 @@ export default function Layout({ children }: any) {
       </div>
       <Head>
         <title>CristianRM</title>
-        <meta
-          name="description"
-          content="Portafolio personal de desarrollo web de CristianRM"
-        />
-        <link rel="icon" href="/static/logo.png" />
       </Head>
       <RevealNavbar />
       <Navbar />
