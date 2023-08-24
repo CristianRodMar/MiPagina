@@ -31,7 +31,7 @@ export default function RevealContainer({children}: any) {
 
     return(
         <div ref={revealRef} className={`bg-white p-5 rounded-lg shadow-lg ${styles['container']} ${styles['reveal']} ${visible ? styles['visible'] : ''}`}>
-            {children}
+                {children}
         </div>
     )
 }

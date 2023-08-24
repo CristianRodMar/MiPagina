@@ -11,7 +11,7 @@ export default function Navbar() {
                 <div className='flex sm:flex-row flex-col gap-7 font-bold text-lg items-center'>
                     <h1 className="select-none text-white">¡En construcción!</h1>
                     <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/">Inicio</Link>
-                    <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/example">Ejemplo</Link>
+                    <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/info">Información</Link>
                 </div>
             </div>
         </nav>
