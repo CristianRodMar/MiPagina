@@ -17,7 +17,9 @@ export default function Example() {
           ventana a mi mundo de desarrollo y creatividad. Aquí, he creado un
           portfolio utilizando tecnología Next.js (React) como se puede apreciar
           en los header la página aún se encuentra en construcción por lo que
-          falta contenido, animaciones y funcionalidades.
+          falta contenido, animaciones y funcionalidades. Incluso el dominio de
+          vercel en esta página web pues la idea es desplegarla en un servidor
+          propio con dockers y un dominio propio
         </p>
         <hr />
       </RevealContainer>
@@ -42,7 +44,7 @@ export default function Example() {
           podrás ver de primera mano cómo mi experiencia en estas tecnologías se
           traduce en proyectos impresionantes y en un portafolio que realmente
           destaca. ¡Gracias por visitar y espero que disfrutes explorando mi
-          trabajo tanto como yo disfruto creándolo!"
+          trabajo tanto como yo disfruto creándolo!
         </p>
         <hr />
       </RevealContainer>
