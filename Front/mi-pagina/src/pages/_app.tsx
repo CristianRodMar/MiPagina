@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           name="description"
           content="Portafolio personal de desarrollo web de CristianRM"
         />
-        <link rel="icon" href="/static/logo.png" />
+        <link rel="icon" href="/static/Logo.png" />
       </Head>
       <Layout>
         <Component {...pageProps} />
