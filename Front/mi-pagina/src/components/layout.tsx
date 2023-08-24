@@ -1,4 +1,3 @@
-import Head from "next/head";
 import RevealNavbar from "@/components/revealNavbar";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -11,9 +10,6 @@ export default function Layout({ children }: any) {
           <source src="/assets/BGAnimation2.mp4" type="video/mp4" />
         </video>
       </div>
-      <Head>
-        <title>CristianRM</title>
-      </Head>
       <RevealNavbar />
       <Navbar />
       <div className="content">{children}</div>
