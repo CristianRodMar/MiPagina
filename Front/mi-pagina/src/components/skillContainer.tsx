@@ -1,27 +1,35 @@
-import '@/styles/skillContainer.css'
+import styles from '@/styles/skillContainer.module.css'
+import {useState, useEffect, useRef} from 'react'
 
 export default function SkillContainer({children}: any) {
 
-    var revealLimit:number = 50
+    const [visibleSkill, setVisibleSkill] = useState(false)
+    const revealRef = useRef<HTMLDivElement>(null)
+    const revealLimit:number = 50
 
-    if (typeof window !== 'undefined') {
-        window.addEventListener('scroll', visibleSkillOrNot)
-    }
+    useEffect(() => {
 
-    function visibleSkillOrNot() {
-        var toRevealSkills = document.querySelectorAll('.skill-container')
-        toRevealSkills.forEach(function(el) {
-            if((el.getBoundingClientRect().top) < (window.innerHeight -revealLimit)) {
-                el.classList.add('visible-skill')
-            } else {
-                el.classList.remove('visible-skill')
+        function visibleSkillOrNot() {
+            if(revealRef.current) {
+                const toRevealSkills = revealRef.current
+                if ((toRevealSkills.getBoundingClientRect().top) < (window.innerHeight - revealLimit)) {
+                    setVisibleSkill(true)
+                } else {
+                    setVisibleSkill(false)
+                }
             }
-        })
+        }
 
-    }
+        window.addEventListener('scroll', visibleSkillOrNot)
+        return () => {
+            window.removeEventListener('scroll', visibleSkillOrNot)
+        }
+
+    }, [])
+
 
     return(
-        <div className='bg-slate-50 p-2 rounded-lg shadow-lg skill-container text-center font-bold'>
+        <div ref={revealRef} className={`${visibleSkill ? styles['visible-skill'] : ''} bg-slate-50 p-2 rounded-lg shadow-lg ${styles['skill-container']} text-center font-bold`}>
             {children}
         </div>
     )

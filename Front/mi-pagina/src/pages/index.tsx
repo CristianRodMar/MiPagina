@@ -1,4 +1,3 @@
-import "@/styles/index.css";
 import BioContainer from "@/components/bioContainer";
 import SkillContainer from "@/components/skillContainer";
 
