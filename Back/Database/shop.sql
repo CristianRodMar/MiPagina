@@ -3,7 +3,6 @@ CREATE SCHEMA shop;
 
 SET search_path TO shop;
 
-DROP TABLE Customers CASCADE;
 CREATE TABLE Customers (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
@@ -11,7 +10,6 @@ CREATE TABLE Customers (
     address VARCHAR(200)
 );
 
-DROP TABLE Items CASCADE;
 CREATE TABLE Items (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
@@ -19,13 +17,11 @@ CREATE TABLE Items (
     price DECIMAL (10,2)
 );
 
-DROP TABLE Workers CASCADE;
 CREATE TABLE Workers (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100)
 );
 
-DROP TABLE Orders CASCADE;
 CREATE TABLE Orders (
     id SERIAL PRIMARY KEY,
     customer_id INT REFERENCES Customers(id),
@@ -34,7 +30,6 @@ CREATE TABLE Orders (
     full_price DECIMAL (10,2)
 );
 
-DROP TABLE OrderDetails CASCADE;
 CREATE TABLE OrderDetails (
     order_id INT REFERENCES Orders(id),
     item_id INT REFERENCES Items(id),
@@ -42,21 +37,19 @@ CREATE TABLE OrderDetails (
     PRIMARY KEY (order_id, item_id)
 );
 
-DROP FUNCTION shop.calculate_order_total(INTEGER);
-CREATE OR REPLACE FUNCTION shop.calculate_order_total(order_id INT) RETURNS DECIMAL AS $$
+CREATE OR REPLACE FUNCTION shop.calculate_order_total(myID INT) RETURNS DECIMAL AS $$
 DECLARE
     total DECIMAL(10, 2) := 0;
 BEGIN
     SELECT SUM(od.quantity * i.price) INTO total
     FROM shop.OrderDetails od
     JOIN shop.Items i ON od.item_id = i.id
-    WHERE od.order_id = order_id;
+    WHERE od.order_id = myID;
     
     RETURN total;
 END;
 $$ LANGUAGE plpgsql;
 
-DROP PROCEDURE shop.update_null_full_prices();
 CREATE OR REPLACE PROCEDURE shop.update_null_full_prices() AS $$
 DECLARE
     loopID INT;
