@@ -5,35 +5,49 @@ export default function Example() {
     <main className="flex flex-col gap-6">
       <div className="title-container py-32">
         <h1 className="select-none lg:text-9xl md:text-6xl text-4xl text-center text-white title">
-          Information
+          Información
         </h1>
       </div>
 
       <RevealContainer>
-        <h2 className="text-xl mb-2 text-center">What is this?</h2>
+        <h2 className="text-xl mb-2 text-center">¿Qué es esto?</h2>
         <hr />
         <p className="py-2">
-          Hello and welcome to my online portfolio! This webpage is a window into my world of development and creativity. Here, I've created a portfolio using Next.js (React) technology, as you can see in the headers. The page is still under construction, so content, animations, and functionalities are missing. Even the Vercel domain on this webpage, as the idea is to deploy it on my own server using Docker and a custom domain.
+          ¡Hola y bienvenido a mi portfolio en línea! Esta página web es una
+          ventana a mi mundo de desarrollo y creatividad. Aquí, he creado un
+          portfolio utilizando tecnología Next.js (React) como se puede apreciar
+          en los header la página aún se encuentra en construcción por lo que
+          falta contenido, animaciones y funcionalidades. Incluso el dominio de
+          vercel en esta página web pues la idea es desplegarla en un servidor
+          propio con dockers y un dominio propio
         </p>
         <hr />
       </RevealContainer>
       <RevealContainer>
-        <h2 className="text-xl mb-2 text-center">Future</h2>
+        <h2 className="text-xl mb-2 text-center">Futuro</h2>
         <hr />
         <p className="py-2">
-          Furthermore, I'm considering the possibility of adding a video game that I'm gradually developing in Unity. I'll also use this webpage to experiment with different technologies. The goal is to showcase the experience I have with them, as the code for this webpage is available in my GitHub repository, which you can find in the footer of the website.
+          Además, estoy considerando la posibilidad de añadir un videojuego que
+          estoy desarrollando poco a poco en Unity. También utilizaré esta
+          página web para trastear con diferentes tecnologías. El objetivo es
+          demostrar la experiencia que tengo con ellas puesto que el código de
+          esta página web está disponible en mi repositorio de github que puedes
+          encontrar en el footer de la web.
         </p>
         <hr />
       </RevealContainer>
       <RevealContainer>
-        <h2 className="text-xl mb-2 text-center">Thank You!</h2>
+        <h2 className="text-xl mb-2 text-center">¡Gracias!</h2>
         <hr />
         <p className="py-2">
-          So stay tuned! As my portfolio evolves, you'll get a firsthand look at how my experience in these technologies translates into impressive projects and a standout portfolio. Thank you for visiting, and I hope you enjoy exploring my work as much as I enjoy creating it!
+          ¡Así que mantente atento! A medida que evoluciona mi portafolio,
+          podrás ver de primera mano cómo mi experiencia en estas tecnologías se
+          traduce en proyectos impresionantes y en un portafolio que realmente
+          destaca. ¡Gracias por visitar y espero que disfrutes explorando mi
+          trabajo tanto como yo disfruto creándolo!
         </p>
         <hr />
       </RevealContainer>
     </main>
   );
 }
-

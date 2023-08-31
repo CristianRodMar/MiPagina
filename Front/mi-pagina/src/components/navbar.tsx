@@ -9,9 +9,9 @@ export default function Navbar() {
             <div className='flex sm:flex-row flex-col items-center justify-between px-2'>
                 <Image className='select-none m-5' src='/static/Logo.svg' width={65} height={65} alt='Logo'/>
                 <div className='flex sm:flex-row flex-col gap-7 font-bold text-lg items-center'>
-                    <h1 className="select-none text-white">Under Construction!</h1>
-                    <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/">Home</Link>
-                    <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/info">Information</Link>
+                    <h1 className="select-none text-white">¡En construcción!</h1>
+                    <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/">Inicio</Link>
+                    <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/info">Información</Link>
                 </div>
             </div>
         </nav>
