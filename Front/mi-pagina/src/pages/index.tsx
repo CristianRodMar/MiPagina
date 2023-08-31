@@ -10,80 +10,80 @@ export default function Home() {
         </h1>
       </div>
       <BioContainer imagePath="/static/Foto.png">
-        <h1 className='text-center text-5xl sm:text-7xl py-5'>Sobre mi</h1>
+        <h1 className="text-center text-5xl sm:text-7xl py-5">About Me</h1>
         <hr />
         <div className="p-5 sm:text-lg text-base">
           <p>
-            ¡Hola! Soy Cristian Rodríguez Martín. Aunque mi camino profesional
-            comenzó en el mundo audiovisual, el hecho de que en mi entorno
-            personal varias personas se dediquen al mundo del desarrollo
-            hizo que me interesase por este mundo.
+            Hi! I'm Cristian Rodríguez Martín. Although my professional journey
+            started in the audiovisual world, the fact that several people in my
+            personal circle are involved in the field of development piqued my
+            interest in this world.
           </p>
-          <br/>
+          <br />
           <p>
-            Tal fue así que en el añó 2021 me matriculé en el instituto IES Azarquiel
-            en el grado superior de desarrollo de aplicaciones web. Durante esta
-            formación me enseñaron diversas tecnologías. Aun así mi pasión por el
-            desarrollo me motiva a desarrollar proyectos personales tales como esta
-            página web. El objetivo de estos proyectos es formarme en otras 
-            tecnologías, intentaré siempre que sea posible colocar esos proyectos
-            en esta web.
+            So much so that in 2021, I enrolled at IES Azarquiel Institute for a
+            higher degree in web application development. Throughout this
+            education, I was introduced to various technologies. Nevertheless,
+            my passion for development motivates me to work on personal projects
+            like this website. The goal of these projects is to learn about
+            other technologies, and I'll always try to showcase these projects
+            on this website.
           </p>
-          <br/>
+          <br />
           <p>
-            Como valores: Intento aplicar soluciones modernas y creativas a desafíos
-            complejos. Mi pasión por la creación y la innovación me motiva a enfrentar
-            cada proyecto con entusiasmo y dedicación. Creo firmemente en la importancia
-            de la colaboración y el aprendizaje continuo. Me encanta trabajar en equipo,
-            compartiendo conocimientos y experiencias para lograr resultados. Siempre 
-            claro con música de fondo.
+            As for my values: I strive to apply modern and creative solutions to
+            complex challenges. My passion for creation and innovation drives me
+            to approach each project with enthusiasm and dedication. I firmly
+            believe in the importance of collaboration and continuous learning.
+            I enjoy working in teams, sharing knowledge and experiences to
+            achieve results. And, of course, always with some background music.
           </p>
         </div>
         <hr />
-        <h1 className='text-center text-5xl py-5'>Experiencia Laboral</h1>
+        <h1 className="text-center text-5xl py-5">Work Experience</h1>
         <hr />
         <div className="text-base">
-          <ul className='flex md:flex-row flex-col md:gap-0 gap-3 items-center justify-between py-5'>
+          <ul className="flex md:flex-row flex-col md:gap-0 gap-3 items-center justify-between py-5">
             <li className="mx-2">
-              <h2>Editor de video y animación</h2>
-              <p>QLASH | España | 01/06/2021 - Actual</p>
+              <h2>Video and Animation Editor</h2>
+              <p>QLASH | Spain | 01/06/2021 - Present</p>
             </li>
             <li className="mx-2">
-              <h2>QA Tester LMT (Lituania)</h2>
+              <h2>QA Tester LMT (Lithuania)</h2>
               <p>HPE CDS | Talavera de la Reina | 27/03/2023 - 19/06/2023</p>
             </li>
             <li className="mx-2">
-              <h2>Editor de video y animación</h2>
+              <h2>Video and Animation Editor</h2>
               <p>Pellikola | Malta | 01/04/2019 - 20/06/2019</p>
             </li>
             <li className="mx-2">
-              <h2>Ayudante de producción de informativos</h2>
+              <h2>News Production Assistant</h2>
               <p>CMM | Toledo | 01/04/2017 - 20/06/2017</p>
             </li>
           </ul>
         </div>
         <hr />
-        <h1 className='text-center text-5xl py-5'>Formación Académica</h1>
+        <h1 className="text-center text-5xl py-5">Academic Education</h1>
         <hr />
-        <div className='test-base'>
-          <ul className='flex md:flex-row flex-col md:gap-0 gap-3 items-center justify-between py-5'>
+        <div className="test-base">
+          <ul className="flex md:flex-row flex-col md:gap-0 gap-3 items-center justify-between py-5">
             <li className="mx-2">
-              <h2>Matrícula de honor en desarrollo de aplicaciones web</h2>
+              <h2>Honors in Web Application Development</h2>
               <p>IES Azarquiel | Toledo | 2021 - 2023</p>
             </li>
             <li className="mx-2">
-              <h2>Realización de cine y espectáculos</h2>
-              <p>IES Alfonso X el sabio | Toledo | 2017 - 2019</p>
+              <h2>Film and Show Realization</h2>
+              <p>IES Alfonso X el Sabio | Toledo | 2017 - 2019</p>
             </li>
             <li className="mx-2">
-              <h2>Producción de cine y espectáculos</h2>
-              <p>IES Alfonso X el sabio | Toledo | 2015 - 2017</p>
+              <h2>Film and Show Production</h2>
+              <p>IES Alfonso X el Sabio | Toledo | 2015 - 2017</p>
             </li>
           </ul>
         </div>
-        <hr/>
-        <h1 className='text-center text-5xl py-5'>Habilidades</h1>
-        <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 pb-6'>
+        <hr />
+        <h1 className="text-center text-5xl py-5">Skills</h1>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 pb-6">
           <SkillContainer># Java</SkillContainer>
           <SkillContainer># JavaScript</SkillContainer>
           <SkillContainer># TypeScript</SkillContainer>
@@ -122,17 +122,17 @@ export default function Home() {
           <SkillContainer># Blender</SkillContainer>
           <SkillContainer># Adobe Premiere</SkillContainer>
           <SkillContainer># Adobe After Effects</SkillContainer>
-          <SkillContainer># Adobe Ilustrator</SkillContainer>
+          <SkillContainer># Adobe Illustrator</SkillContainer>
           <SkillContainer># Adobe Photoshop</SkillContainer>
           <SkillContainer># Adobe Audition</SkillContainer>
         </div>
-        <hr/>
-        <h1 className='text-center text-5xl py-5'>Idiomas</h1>
-        <div className='flex flex-row items-center justify-around font-bold pb-5'>
-          <h2>Ingles: Alto</h2>
-          <h2>Castellano: Nativo</h2>
+        <hr />
+        <h1 className="text-center text-5xl py-5">Languages</h1>
+        <div className="flex flex-row items-center justify-around font-bold pb-5">
+          <h2>English: Proficient</h2>
+          <h2>Spanish: Native</h2>
         </div>
-        <hr className="mb-10"/>
+        <hr className="mb-10" />
       </BioContainer>
     </main>
   );

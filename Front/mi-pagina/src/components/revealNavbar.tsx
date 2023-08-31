@@ -25,9 +25,9 @@ export default function RevealNavbar() {
         <nav className={'shadow-lg bg-gradient-to-t from-gray-900 to-gray-600 sticky top-0 z-10 ' + (visibleNav ? styles['visible-nav'] : '')} id={styles["second-nav"]}>
             <div className='max-w-xl mx-auto'>
                 <div className='font-bold grid sm:grid-cols-3 gap-5 text-lg text-center py-4'>
-                    <h1 className="select-none text-white">¡En construcción!</h1>
-                    <Link className={"select-none text-white text-opacity-50 hover:text-opacity-100 duration-100 " + (styles['navButton'])} href="/">Inicio</Link>
-                    <Link className={"select-none text-white text-opacity-50 hover:text-opacity-100 duration-100 " + (styles['navButton'])} href="/info">Información</Link>
+                    <h1 className="select-none text-white">Under Construction!</h1>
+                    <Link className={"select-none text-white text-opacity-50 hover:text-opacity-100 duration-100 " + (styles['navButton'])} href="/">Home</Link>
+                    <Link className={"select-none text-white text-opacity-50 hover:text-opacity-100 duration-100 " + (styles['navButton'])} href="/info">Information</Link>
                 </div>
             </div>
             <div className='absolute left-1/2 transform -translate-x-1/2'>
