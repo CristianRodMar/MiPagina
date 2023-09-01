@@ -1,9 +1,0 @@
-.myNav {
-    transform: translateY(-2rem)
-}
-
-@media only screen and (max-width: 600px) {
-    .myNav {
-        transform: translateY(-10rem);
-    }
-}
