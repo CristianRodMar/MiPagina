@@ -1,35 +1,23 @@
-package com.cristian.shop.entity;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+package com.cristian.shop.dto;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
 
-@Entity
-@Table(name = "orders", schema = "shop")
-public class Order {
+import com.cristian.shop.entity.Customer;
+import com.cristian.shop.entity.Order;
+import com.cristian.shop.entity.Worker;
+
+public class OrderDto {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne
-    @JoinColumn(name = "customer_id")
     private Customer customer;
-    @ManyToOne
-    @JoinColumn(name = "courier")
     private Worker courier;
-    private LocalDateTime orderDate = LocalDateTime.now();
+    private LocalDateTime orderDate;
     private BigDecimal fullPrice;
-    @OneToMany(mappedBy = "order")
-    private List<OrderDetail> orderDetails;
+    private List<OrderDetailDto> orderItems;
+
 
     public Long getId() {
         return this.id;
@@ -71,12 +59,24 @@ public class Order {
         this.fullPrice = fullPrice;
     }
 
-    public List<OrderDetail> getOrderItems() {
-        return this.orderDetails;
+    public List<OrderDetailDto> getOrderItems() {
+        return this.orderItems;
     }
 
-    public void setOrderItems(List<OrderDetail> orderItems) {
-        this.orderDetails = orderItems;
+    public void setOrderItems(List<OrderDetailDto> orderItems) {
+        this.orderItems = orderItems;
+    }
+
+    public OrderDto(Order order) {
+        this.id = order.getId();
+        this.customer = order.getCustomer();
+        this.courier = order.getCourier();
+        this.orderDate = order.getOrderDate();
+        this.fullPrice = order.getFullPrice();
+        // Personaliza la serialización de los detalles del pedido
+        this.orderItems = order.getOrderItems().stream()
+                .map(OrderDetailDto::new)
+                .collect(Collectors.toList());
     }
 
 }

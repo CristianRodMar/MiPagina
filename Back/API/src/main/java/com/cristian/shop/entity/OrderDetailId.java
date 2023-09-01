@@ -2,13 +2,18 @@ package com.cristian.shop.entity;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Embeddable;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Embeddable
 public class OrderDetailId implements Serializable {
     
     @ManyToOne
+    @JsonIgnore
+    @JoinColumn(name = "order_id")
     private Order order;
     @ManyToOne
     private Item item;
