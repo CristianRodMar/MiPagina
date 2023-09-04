@@ -2,7 +2,10 @@ import RevealNavbar from "@/components/revealNavbar";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
+
 export default function Layout({ children }: any) {
+
+
   return (
     <>
       <div className="video-container">

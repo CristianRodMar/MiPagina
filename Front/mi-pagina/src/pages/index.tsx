@@ -2,6 +2,7 @@ import BioContainer from "@/components/bioContainer";
 import SkillContainer from "@/components/skillContainer";
 
 export default function Home() {
+
   return (
     <main className="flex flex-col">
       <div className="title-container py-32">

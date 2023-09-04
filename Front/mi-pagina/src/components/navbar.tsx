@@ -12,6 +12,7 @@ export default function Navbar() {
                     <h1 className="select-none text-white">¡En construcción!</h1>
                     <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/">Inicio</Link>
                     <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/info">Información</Link>
+                    <Link className="select-none text-white text-opacity-50 hover:text-opacity-100 duration-100" href="/myShop">Ejemplo</Link>
                 </div>
             </div>
         </nav>

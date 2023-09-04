@@ -1,6 +1,7 @@
 import RevealContainer from "@/components/revealContainer";
 
 export default function Example() {
+
   return (
     <main className="flex flex-col gap-6">
       <div className="title-container py-32">
