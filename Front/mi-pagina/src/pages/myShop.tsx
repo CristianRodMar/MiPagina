@@ -27,9 +27,14 @@ export default function MyShop() {
     }, [])
 
     return (
-        <main>
+        <main  className="flex flex-col">
+            <div className="title-container py-32">
+                <h1 className="select-none lg:text-8xl md:text-6xl text-4xl text-center text-white title">
+                    Integración Front-Back
+                </h1>
+            </div>
             {isLoading ? (<LoadingAnimation />) : (
-                <table className="min-w-fill bg-white">
+                <table className="w-full table-auto rounded-lg overflow-hidden bg-white">
                     <thead>
                         <tr>
                             <th className="py-2 px-3 bg-gray-200 text-left">Nombre</th>
