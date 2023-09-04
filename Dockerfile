@@ -1,6 +1,6 @@
 FROM openjdk:20
 
-COPY my-api-0.1.jar /app.jar
+COPY my-api-0.1-test.jar /app.jar
 
 EXPOSE 8080
 
