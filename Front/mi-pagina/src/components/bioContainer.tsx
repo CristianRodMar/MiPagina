@@ -13,7 +13,6 @@ export default function BioContainer({imagePath, children}:any) {
     useEffect(() => {
         function visibleOrNotBio () {
             var toRevealContentBio = document.querySelector(`.${styles['bio-reveal']}`)   
-            console.log(toRevealContentBio) //¿Por qué es null?
             if (toRevealContentBio !== null && (toRevealContentBio.getBoundingClientRect().top < (window.innerHeight - revealLimit))) {
                 setVisibleBio(true)
             } else if (toRevealContentBio !==null) { 

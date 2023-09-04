@@ -1,5 +1,5 @@
 #second-nav {
-    transform: translateY(-250px);
+    transform: translateY(-500px);
     transition-property: transform;
     transition-duration: 0.4s;
     transition-timing-function: ease-in-out;

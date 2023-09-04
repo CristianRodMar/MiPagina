@@ -1,6 +1,6 @@
 FROM openjdk:20
 
-COPY my-api.jar /app.jar
+COPY shop-0.1.jar /app.jar
 
 EXPOSE 8080
 
